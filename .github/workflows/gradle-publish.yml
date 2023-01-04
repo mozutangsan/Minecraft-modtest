@@ -33,7 +33,7 @@ jobs:
     - name: Prepare
       run : chmod +x gradlew
     - name: Build with Gradle
-      run : ./gradlew pmdMain spotlessJavaCheck build --no-daemon --max-workers 1
+      run : ./gradlew build --no-daemon --max-workers 1
 
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
     # the publishing section of your build.gradle
