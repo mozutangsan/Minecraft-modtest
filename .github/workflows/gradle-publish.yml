@@ -36,4 +36,4 @@ jobs:
         prerelease: false
         title: 0.0.1
         files: |
-          build/lib/*.jar
+          build/libs/*.jar
