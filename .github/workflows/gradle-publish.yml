@@ -1,8 +1,9 @@
 name: Gradle Package
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: 
+    - master
 
 jobs:
   build:
@@ -27,10 +28,12 @@ jobs:
       run : chmod +x gradlew
     - name: Build with Gradle
       run : ./gradlew publish --no-daemon --max-workers 1
-    - name: Publish to GitHub Packages
-      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+    - name: Release
+      uses: marvinpinto/action-automatic-release@lastest
       with:
-        arguments: publish
-      env:
-        USERNAME: mozutangsan
-        TOKEN: ${{ secrets.TOKEN }}
+        repo_token: ${{secrets.GITHUB.TOKEN}}
+        automatic_release_tag: 0.0.1
+        prerelease: false
+        title: 0.0.1
+        files: |
+          build/lib/*.jar
