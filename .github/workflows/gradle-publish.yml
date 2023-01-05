@@ -32,8 +32,8 @@ jobs:
       uses: marvinpinto/action-automatic-releases@latest
       with:
         repo_token: ${{secrets.TOKEN}}
-        automatic_release_tag: 0.0.2
+        automatic_release_tag: 0.0.1
         prerelease: false
-        title: 0.0.2
+        title: 0.0.1
         files: |
           build/libs/*.jar
