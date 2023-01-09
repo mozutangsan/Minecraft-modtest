@@ -34,7 +34,6 @@ public class NetworkNode {
     public BlockPos getPos() {
         return blockEntity.getBlockPos();
     }
-    //获取结点所在的BlockEntity
     public BaseBlockEntity getBlockEntity() {
         return blockEntity;
     }
