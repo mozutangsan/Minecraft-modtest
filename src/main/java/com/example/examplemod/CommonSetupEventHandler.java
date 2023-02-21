@@ -13,6 +13,7 @@ import org.jetbrains.annotations.Nullable;
 public class CommonSetupEventHandler {
     @SubscribeEvent
     public static void onSetUpEvent(FMLCommonSetupEvent event) {
+        //abc
         event.enqueueWork(() -> {
             CapabilityManager.INSTANCE.register(
                     ISimpleCapability.class,
