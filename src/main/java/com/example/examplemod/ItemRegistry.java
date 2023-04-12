@@ -7,6 +7,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ItemRegistry {
     public static final DeferredRegister<Item> ITEMS=DeferredRegister.create(ForgeRegistries.ITEMS,"example");
-    public static final RegistryObject<Item> ironApple=ITEMS.register("iron_apple", IronApple::new);
+    public static final RegistryObject<Item> ironApple = ITEMS.register("iron_apple", IronApple::new);
 
 }
