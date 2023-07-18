@@ -7,5 +7,6 @@ import net.minecraftforge.fml.common.Mod;
 public class BlockEvent {
     @SubscribeEvent
     public void blockBreak(net.minecraftforge.event.world.BlockEvent.BreakEvent event){
+        
     }
 }
